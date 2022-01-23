@@ -37,6 +37,8 @@ namespace FactoryDesignPattern
             return screen;
         }
     }
+    
+    
     //Version 2 (recommended)
     abstract class Creator2
     {
