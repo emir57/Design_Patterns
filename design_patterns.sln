@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentInterfacePrinciple", "FluentInterfacePrinciple\FluentInterfacePrinciple.csproj", "{60946B6B-17D7-4DE9-AB5F-237BA912CF80}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentInterfacePrinciple", "FluentInterfacePrinciple\FluentInterfacePrinciple.csproj", "{60946B6B-17D7-4DE9-AB5F-237BA912CF80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentInterfacePrinciple2", "FluentInterfacePrinciple2\FluentInterfacePrinciple2.csproj", "{A917D65B-AD64-49D5-988D-8CD8A84983A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentInterfacePrinciple2", "FluentInterfacePrinciple2\FluentInterfacePrinciple2.csproj", "{A917D65B-AD64-49D5-988D-8CD8A84983A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonDesignPattern", "SingletonDesignPattern\SingletonDesignPattern.csproj", "{A473E13D-AC63-4289-8C6A-C8968A06E515}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A917D65B-AD64-49D5-988D-8CD8A84983A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A917D65B-AD64-49D5-988D-8CD8A84983A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A917D65B-AD64-49D5-988D-8CD8A84983A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A473E13D-AC63-4289-8C6A-C8968A06E515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A473E13D-AC63-4289-8C6A-C8968A06E515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A473E13D-AC63-4289-8C6A-C8968A06E515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A473E13D-AC63-4289-8C6A-C8968A06E515}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
