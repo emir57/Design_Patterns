@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdapterDesignPattern", "Ada
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyDesignPattern", "StrategyDesignPattern\StrategyDesignPattern.csproj", "{A081A249-8B38-44E1-96C3-8BD5272EDFEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoDesignPattern", "MementoDesignPattern\MementoDesignPattern.csproj", "{FAE48E64-8D4B-41CF-BD2E-6A2907A0E21D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoDesignPattern", "MementoDesignPattern\MementoDesignPattern.csproj", "{FAE48E64-8D4B-41CF-BD2E-6A2907A0E21D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyDesignPattern", "ProxyDesignPattern\ProxyDesignPattern.csproj", "{8892E4CF-7BA1-4F8C-AE3F-3CEB513406CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{FAE48E64-8D4B-41CF-BD2E-6A2907A0E21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAE48E64-8D4B-41CF-BD2E-6A2907A0E21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAE48E64-8D4B-41CF-BD2E-6A2907A0E21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8892E4CF-7BA1-4F8C-AE3F-3CEB513406CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8892E4CF-7BA1-4F8C-AE3F-3CEB513406CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8892E4CF-7BA1-4F8C-AE3F-3CEB513406CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8892E4CF-7BA1-4F8C-AE3F-3CEB513406CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
