@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoDesignPattern", "Mem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyDesignPattern", "ProxyDesignPattern\ProxyDesignPattern.csproj", "{8892E4CF-7BA1-4F8C-AE3F-3CEB513406CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypeDesginPattern", "PrototypeDesginPattern\PrototypeDesginPattern.csproj", "{C01D3214-E220-4BF2-844D-94BD29A5C8FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypeDesginPattern", "PrototypeDesginPattern\PrototypeDesginPattern.csproj", "{C01D3214-E220-4BF2-844D-94BD29A5C8FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverDesignPattern", "ObserverDesignPattern\ObserverDesignPattern.csproj", "{87B371AD-5075-45BB-9941-6DE9FCA4C97A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{C01D3214-E220-4BF2-844D-94BD29A5C8FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C01D3214-E220-4BF2-844D-94BD29A5C8FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C01D3214-E220-4BF2-844D-94BD29A5C8FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B371AD-5075-45BB-9941-6DE9FCA4C97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B371AD-5075-45BB-9941-6DE9FCA4C97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B371AD-5075-45BB-9941-6DE9FCA4C97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B371AD-5075-45BB-9941-6DE9FCA4C97A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
