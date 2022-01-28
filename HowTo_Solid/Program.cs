@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.IO;
 
 namespace HowTo_Solid
@@ -16,16 +17,40 @@ namespace HowTo_Solid
             redTeam.Move(15, 10, 40);
         }
     }
-    class RouteSaver
+    interface IRouteSaver
     {
-        public void WriteToFile(string content)
+        void Write(string content);
+    }
+    class TextSave : IRouteSaver
+    {
+        public void Write(string content)
         {
             File.AppendAllText(Path.Combine(Environment.CurrentDirectory, "Routes.tx"), content);
         }
     }
+    class DbSaver : IRouteSaver
+    {
+        public void Write(string content)
+        {
+            //Write Db
+            Console.WriteLine("DbSaved!");
+        }
+    }
+    class DeviceSaver : IRouteSaver
+    {
+        public void Write(string content)
+        {
+            //Write device
+        }
+    }
     class Force
     {
-        private RouteSaver _routeSaver = new();
+        private static IRouteSaver _routeSaver;
+        static Force()
+        {
+            string saverName = ConfigurationManager.AppSettings["SaverType"];
+            _routeSaver = (IRouteSaver)Activator.CreateInstance(Type.GetType(saverName));
+        }
         public virtual void Setup()
         {
             //Todo setup 
@@ -33,7 +58,7 @@ namespace HowTo_Solid
         public virtual void Move(int x,int y,int z)
         {
             //Todo: move saver
-            _routeSaver.WriteToFile(string.Format("{0} to {1},{2},{3}\n", this.GetType().Name, x, y, z));
+            _routeSaver.Write(string.Format("{0} to {1},{2},{3}\n", this.GetType().Name, x, y, z));
         }
     }
     class Tank : Force
