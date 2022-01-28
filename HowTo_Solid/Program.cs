@@ -9,14 +9,13 @@ namespace HowTo_Solid
     {
         static void Main(string[] args)
         {
-            List<Force> forces = new List<Force>()
+            Force t80 = new Tank();
+            t80.Move(3,5,6);
+            Force specialForces = new Paratrooper();
+            if (((ILocationControl)specialForces).Check())
             {
-                new Infantry(),
-                new Tank(),
-            };
-            foreach (var force in forces)
-            {
-                force.Move(4, 56, 21);
+                specialForces.Setup();
+                specialForces.Move(3, 6, 10);
             }
         }
     }
@@ -53,6 +52,10 @@ namespace HowTo_Solid
     interface ISetup
     {
         void Setup();
+    }
+    interface ILocationControl
+    {
+        bool Check();
     }
     class Force:IMovement,ISetup
     {
@@ -99,6 +102,21 @@ namespace HowTo_Solid
         public void Setup()
         {
             
+        }
+    }
+    class Paratrooper : Force, ILocationControl
+    {
+        public override void Setup()
+        {
+            base.Setup();
+        }
+        public override void Move(int x, int y, int z)
+        {
+            base.Move(x, y, z);
+        }
+        public bool Check()
+        {
+            return false;
         }
     }
 
