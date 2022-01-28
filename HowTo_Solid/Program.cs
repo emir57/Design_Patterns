@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
 
@@ -8,13 +9,15 @@ namespace HowTo_Solid
     {
         static void Main(string[] args)
         {
-            Force t80 = new Tank();
-            t80.Setup();
-            t80.Move(10, 20, 33);
-            t80.Move(22,35,32);
-            Force redTeam = new Infantry();
-            redTeam.Setup();
-            redTeam.Move(15, 10, 40);
+            List<Force> forces = new List<Force>()
+            {
+                new Infantry(),
+                new Tank(),
+            };
+            foreach (var force in forces)
+            {
+                force.Move(4, 56, 21);
+            }
         }
     }
     interface IRouteSaver
@@ -43,7 +46,15 @@ namespace HowTo_Solid
             //Write device
         }
     }
-    class Force
+    interface IMovement
+    {
+        void Move(int x, int y, int z);
+    }
+    interface ISetup
+    {
+        void Setup();
+    }
+    class Force:IMovement,ISetup
     {
         private static IRouteSaver _routeSaver;
         static Force()
@@ -81,6 +92,13 @@ namespace HowTo_Solid
         public override void Move(int x, int y, int z)
         {
             base.Move(x, y, z);
+        }
+    }
+    class Bastion : ISetup
+    {
+        public void Setup()
+        {
+            
         }
     }
 
