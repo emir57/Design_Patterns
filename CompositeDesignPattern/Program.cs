@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace CompositeDesignPattern
+﻿namespace CompositeDesignPattern
 {
     class Program
     {
