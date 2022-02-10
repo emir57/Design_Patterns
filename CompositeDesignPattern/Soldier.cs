@@ -9,8 +9,6 @@
             _name = name;
             _rank = rank;
         }
-        public abstract void AddSoldier(Soldier soldier);
-        public abstract void RemoveSoldier(Soldier soldier);
         public abstract void ExecuteSoldier();
     }
 }
