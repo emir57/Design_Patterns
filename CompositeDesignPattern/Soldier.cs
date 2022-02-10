@@ -9,6 +9,6 @@
             _name = name;
             _rank = rank;
         }
-        public abstract void ExecuteSoldier();
+        public abstract void ExecuteOrder();
     }
 }

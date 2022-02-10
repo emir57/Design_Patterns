@@ -12,12 +12,12 @@ namespace CompositeDesignPattern
         }
         public override void AddSoldier(Soldier soldier) => _soldiers.Add(soldier);
 
-        public override void ExecuteSoldier()
+        public override void ExecuteOrder()
         {
             Console.WriteLine("{0} - {1}",_rank,_name);
             foreach (var soldier in _soldiers)
             {
-                soldier.ExecuteSoldier();
+                soldier.ExecuteOrder();
             }
         }
 
