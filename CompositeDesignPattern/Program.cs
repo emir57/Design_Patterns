@@ -15,6 +15,7 @@
             yarbay.AddSoldier(new BuckPrivate("Kaan",Rank.Major));
             albay.AddSoldier(yarbay);
             albay.AddSoldier(new BuckPrivate("Mustafa", Rank.LieutenantColonel));
+            general.AddSoldier(albay);
             general.ExecuteOrder();
         }
     }
