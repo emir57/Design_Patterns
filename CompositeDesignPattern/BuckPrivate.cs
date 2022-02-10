@@ -6,8 +6,7 @@
         {
 
         }
-
-        public override void ExecuteSoldier() 
+        public override void ExecuteOrder() 
             => System.Console.WriteLine($"{_rank} - {_name}");
     }
 }
