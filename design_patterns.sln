@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverDesignPattern", "Ob
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HowTo_Solid", "HowTo_Solid\HowTo_Solid.csproj", "{C4DE1CDE-6EE6-4900-80C6-85701E976098}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IteratorDesignPattern", "IteratorDesginPattern\IteratorDesignPattern.csproj", "{9270C497-214E-4735-BA2B-9D414CF8FE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IteratorDesignPattern", "IteratorDesginPattern\IteratorDesignPattern.csproj", "{9270C497-214E-4735-BA2B-9D414CF8FE3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeDesignPattern", "CompositeDesignPattern\CompositeDesignPattern.csproj", "{089B5573-00A7-457D-A39F-CDE7381DAF4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{9270C497-214E-4735-BA2B-9D414CF8FE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9270C497-214E-4735-BA2B-9D414CF8FE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9270C497-214E-4735-BA2B-9D414CF8FE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089B5573-00A7-457D-A39F-CDE7381DAF4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089B5573-00A7-457D-A39F-CDE7381DAF4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089B5573-00A7-457D-A39F-CDE7381DAF4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089B5573-00A7-457D-A39F-CDE7381DAF4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
