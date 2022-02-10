@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CompositeDesignPattern
 {
-    class Commander : Soldier
+    class Commander : SoldierComposite
     {
         List<Soldier> _soldiers = new List<Soldier>();
         public Commander(string name,Rank rank):base(name,rank)
