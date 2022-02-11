@@ -2,7 +2,7 @@
 
 namespace StateDesignPattern
 {
-    class NoCard : AtmState
+    public class NoCard : AtmState
     {
         public override void EjectCard(AtmMachine context)
         {

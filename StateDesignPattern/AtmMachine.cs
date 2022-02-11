@@ -1,6 +1,6 @@
 ﻿namespace StateDesignPattern
 {
-    class AtmMachine
+    public class AtmMachine
     {
         AtmState state = new NoCard();
         public AtmState State { set { state = value; } }

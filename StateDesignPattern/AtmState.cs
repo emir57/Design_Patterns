@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace StateDesignPattern
 {
-    abstract class AtmState
+    public abstract class AtmState
     {
         public abstract void InsertCard(AtmMachine context);
         public abstract void EjectCard(AtmMachine context);

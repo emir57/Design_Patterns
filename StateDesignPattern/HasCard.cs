@@ -1,6 +1,6 @@
 ﻿namespace StateDesignPattern
 {
-    class HasCard : AtmState
+    public class HasCard : AtmState
     {
         public override void EjectCard(AtmMachine context)
         {
@@ -19,7 +19,7 @@
             {
                 System.Console.WriteLine("Pin Doğrulandı");
                 context.CorrectPinEntered = true;
-                context.State = new HasPin();
+                context.State = new Haspin();
             }
         }
 

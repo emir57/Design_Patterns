@@ -1,6 +1,6 @@
 ﻿namespace StateDesignPattern
 {
-    class Haspin : AtmState
+    public class Haspin : AtmState
     {
         public override void EjectCard(AtmMachine context)
         {
