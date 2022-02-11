@@ -12,7 +12,7 @@ namespace StateDesignPattern
         public override void InsertCard(AtmMachine context)
         {
             Console.WriteLine("Lütfen pin giriniz");
-            context = new HasCard();
+            context.State = new HasCard();
         }
 
         public override void InsertPin(int pin, AtmMachine context)
