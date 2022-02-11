@@ -10,6 +10,8 @@ namespace StateDesignPattern
             atm.InsertCard();
             atm.InsertPin(123);
             atm.RequestCash(500);
+            atm.InsertCard();
+            atm.InsertCard();
         }
     }
 }
